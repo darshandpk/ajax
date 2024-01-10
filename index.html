@@ -1,0 +1,51 @@
+<input type="text" id="num1" value="" placeholder="Enter number"><br><br>
+<input type="text" id="num2" value="" placeholder="Enter number"><br><br>
+
+<button onclick="getsqr()">Getsquare</button>
+
+<button onclick="getcube()">GetCube</button>
+
+<button onclick="getaddition()">GetAddition</button>
+
+<button onclick="getsubstraction()">GetSubstraction</button>
+
+<h1 id="result">mere KARAN ARJUN ayege</h1>
+
+
+<script>
+    //alter use for popup message like allow your microphone
+    //alert(1)
+
+    // x=10;
+    // document.write(x);
+
+    function getsqr(){
+        x=document.getElementById("num1").value
+       //alert(`square of${x} is${x*x}`)
+
+       document.getElementById("result").innerHTML=`square of${x} is${x*x}`
+    }
+
+    function getcube(){
+        x=document.getElementById("num1").value
+       alert(`square of${x} is${x*x*x}`)
+    }
+
+    function getaddition(){
+        x=parseInt(document.getElementById("num1").value)
+        y=parseInt(document.getElementById("num2").value)
+        document.getElementById("result").innerHTML=`Addition of${x} + ${y} is ${x+y}`
+
+        
+    }
+
+    function getsubstraction(){
+        x=parseInt(document.getElementById("num1").value)
+        y=parseInt(document.getElementById("num2").value)
+        document.getElementById("result").innerHTML=`Substraction of${x} - ${y} is ${x-y}`
+
+        
+    }
+
+
+</script>
